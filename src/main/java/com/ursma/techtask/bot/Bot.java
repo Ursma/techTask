@@ -28,7 +28,7 @@ public class Bot extends TelegramLongPollingBot {
         this.botService = botService;
 
         var botCommandList = new ArrayList<BotCommand>();
-        botCommandList.add(new BotCommand("/start", "Изменить расписание"));
+        botCommandList.add(new BotCommand("/start", "Получить ссылку"));
 
         try {
             this.execute(new SetMyCommands(botCommandList, new BotCommandScopeDefault(), null));
